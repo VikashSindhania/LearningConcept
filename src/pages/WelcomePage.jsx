@@ -100,6 +100,14 @@ const WelcomePage = () => {
     navigate("/useMemoHook");
   };
 
+  const handleReactMemoPage = () => {
+    navigate("/reactMemo");
+  };
+
+  const handleUseContextHookPage = () => {
+    navigate("/useContextHook");
+  };
+
   return (
     <>
       <div
@@ -260,6 +268,27 @@ const WelcomePage = () => {
           onClick={handleUseLayoutEffectHookPage}
         >
           UseLayoutEffectHook
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleUseMemoHookPage}
+        >
+          UseMemoHook
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleReactMemoPage}
+        >
+          ReactMemo
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleUseContextHookPage}
+        >
+          UseContextHook
         </button>
 
         <button
