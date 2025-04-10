@@ -27,7 +27,9 @@ import UseLayoutEffectHook from "../pages/UseLayoutEffectHook";
 import UseMemoHook from "../pages/UseMemoHook";
 import UseContextHook from "../pages/UseContextHook";
 import ReactMemo from "../pages/ReactMemo";
-
+import UseCallbackHook from "../pages/UseCallbackHook";
+import UseReferenceHook from "../pages/UseReferenceHook";
+import UseReducerHook from "../pages/UseReducerHook";
 const RoutingPath = () => {
   return (
     <Router>
@@ -59,6 +61,9 @@ const RoutingPath = () => {
         <Route path="/useMemoHook" element={<UseMemoHook />} />
         <Route path="/useContextHook" element={<UseContextHook />} />
         <Route path="/reactMemo" element={<ReactMemo />} />
+        <Route path="/useCallbackHook" element={<UseCallbackHook />} />
+        <Route path="/useReferenceHook" element={<UseReferenceHook />} />
+        <Route path="/useReducerHook" element={<UseReducerHook />} />
       </Routes>
     </Router>
   );

@@ -108,6 +108,18 @@ const WelcomePage = () => {
     navigate("/useContextHook");
   };
 
+  const handleUseCallbackHookPage = () => {
+    navigate("/useCallbackHook");
+  };
+
+  const handleUseReferenceHookPage = () => {
+    navigate("/useReferenceHook");
+  };
+
+  const handleUseReducerHookPage = () => {
+    navigate("/useReducerHook");
+  };
+
   return (
     <>
       <div
@@ -293,9 +305,23 @@ const WelcomePage = () => {
 
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseMemoHookPage}
+          onClick={handleUseCallbackHookPage}
         >
-          UseMemoHook
+          UseCallbackHook
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleUseReferenceHookPage}
+        >
+          UseReferenceHook
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleUseReducerHookPage}
+        >
+          UseReducerHook
         </button>
       </div>
     </>
