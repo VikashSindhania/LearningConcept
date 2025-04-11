@@ -30,6 +30,7 @@ import ReactMemo from "../pages/ReactMemo";
 import UseCallbackHook from "../pages/UseCallbackHook";
 import UseReferenceHook from "../pages/UseReferenceHook";
 import UseReducerHook from "../pages/UseReducerHook";
+import Redux from "../pages/Redux";
 const RoutingPath = () => {
   return (
     <Router>
@@ -64,6 +65,7 @@ const RoutingPath = () => {
         <Route path="/useCallbackHook" element={<UseCallbackHook />} />
         <Route path="/useReferenceHook" element={<UseReferenceHook />} />
         <Route path="/useReducerHook" element={<UseReducerHook />} />
+        <Route path="/redux" element={<Redux />} />
       </Routes>
     </Router>
   );

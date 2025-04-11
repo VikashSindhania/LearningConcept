@@ -120,6 +120,10 @@ const WelcomePage = () => {
     navigate("/useReducerHook");
   };
 
+  const handleReduxPage = () => {
+    navigate("/redux");
+  };
+
   return (
     <>
       <div
@@ -322,6 +326,13 @@ const WelcomePage = () => {
           onClick={handleUseReducerHookPage}
         >
           UseReducerHook
+        </button>
+
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
+          onClick={handleReduxPage}
+        >
+          Redux
         </button>
       </div>
     </>
