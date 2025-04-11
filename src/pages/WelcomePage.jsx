@@ -127,213 +127,225 @@ const WelcomePage = () => {
   return (
     <>
       <div
-        className={`w-full  m-2 h-10 ${
-          darkTheme ? "bg-gray-900 text-white" : ""
+        className={`w-full min-h-screen p-4 ${
+          darkTheme ? "bg-gray-900 text-white" : "bg-white text-gray-900"
         }`}
       >
-        <h1 className="text-2xl font-bold text-center">Welcome to the App</h1>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
+            <h1 className="text-2xl font-bold text-center mb-4 sm:mb-0">
+              Welcome to the App
+            </h1>
 
-        {/* Toggle button to make dark theme with concept of React-redux */}
-        <button
-          onClick={handleDarkTheme}
-          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md flex justify-center w-[200px] sm:w-[100px] md:w-[200px] mx-2 sm:mr-10 sm:ml-auto"
-        >
-          Toggle Dark Theme
-        </button>
+            {/* Toggle button to make dark theme with concept of React-redux */}
+            <button
+              onClick={handleDarkTheme}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md w-full sm:w-auto"
+            >
+              Toggle Dark Theme
+            </button>
+          </div>
 
-        <div className=" w-[550px] flex flex-col ">
-          <button
-            onClick={handleNavigation}
-            className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md flex  justify-center w-[500px] m-2 shadow-lg"
-          >
-            Go to State Management
-          </button>
-          <button
-            onClick={handleCssNavigation}
-            className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md flex  justify-center w-[500px] m-2"
-          >
-            Go to Learning Css
-          </button>
-          <button
-            onClick={handleResponsiveCssNavigation}
-            className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md flex  justify-center w-[500px] m-2"
-          >
-            Go to Responsive Css
-          </button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <button
+              onClick={handleNavigation}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md shadow-lg"
+            >
+              Go to State Management
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleCounterPage}
-          >
-            Counter App
-          </button>
+            <button
+              onClick={handleCssNavigation}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Go to Learning Css
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleCounterReduxPage}
-          >
-            Counter Redux
-          </button>
+            <button
+              onClick={handleResponsiveCssNavigation}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Go to Responsive Css
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleCountriesFlagPage}
-          >
-            Countries Flag
-          </button>
+            <button
+              onClick={handleCounterPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Counter App
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleCardPage}
-          >
-            Form
-          </button>
+            <button
+              onClick={handleCounterReduxPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Counter Redux
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleBallCssGamePage}
-          >
-            Ball Css Game
-          </button>
+            <button
+              onClick={handleCountriesFlagPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Countries Flag
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousInputPage}
-          >
-            Various Input Element
-          </button>
+            <button
+              onClick={handleCardPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Form
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousCardPage}
-          >
-            Various Card
-          </button>
+            <button
+              onClick={handleBallCssGamePage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Ball Css Game
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousGridPage}
-          >
-            Various Grid
-          </button>
+            <button
+              onClick={handleVariousInputPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Input Element
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousTablePage}
-          >
-            Various Table
-          </button>
+            <button
+              onClick={handleVariousCardPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Card
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousFormPage}
-          >
-            Various Form
-          </button>
+            <button
+              onClick={handleVariousGridPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Grid
+            </button>
 
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousFlexCasesPage}
-          >
-            Various Flex Cases
-          </button>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousFlexConceptPage}
-          >
-            Various Flex Concept
-          </button>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleVariousDivCasesPage}
-          >
-            Various Div Cases
-          </button>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handlePlayWithElementsPage}
-          >
-            Play with Elements
-          </button>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white flex rounded-md justify-center w-[500px] m-2 p-2"
-            onClick={handleHooksPage}
-          >
-            Hooks
-          </button>
+            <button
+              onClick={handleVariousTablePage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Table
+            </button>
+
+            <button
+              onClick={handleVariousFormPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Form
+            </button>
+
+            <button
+              onClick={handleVariousFlexCasesPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Flex Cases
+            </button>
+
+            <button
+              onClick={handleVariousFlexConceptPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Flex Concept
+            </button>
+
+            <button
+              onClick={handleVariousDivCasesPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Various Div Cases
+            </button>
+
+            <button
+              onClick={handlePlayWithElementsPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Play with Elements
+            </button>
+
+            <button
+              onClick={handleHooksPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Hooks
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+            <button
+              onClick={handleUseEffectHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              useEffect Hook
+            </button>
+
+            <button
+              onClick={handleUseHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseHook
+            </button>
+
+            <button
+              onClick={handleUseLayoutEffectHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseLayoutEffectHook
+            </button>
+
+            <button
+              onClick={handleUseMemoHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseMemoHook
+            </button>
+
+            <button
+              onClick={handleReactMemoPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              ReactMemo
+            </button>
+
+            <button
+              onClick={handleUseContextHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseContextHook
+            </button>
+
+            <button
+              onClick={handleUseCallbackHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseCallbackHook
+            </button>
+
+            <button
+              onClick={handleUseReferenceHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseReferenceHook
+            </button>
+
+            <button
+              onClick={handleUseReducerHookPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              UseReducerHook
+            </button>
+
+            <button
+              onClick={handleReduxPage}
+              className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
+            >
+              Redux
+            </button>
+          </div>
         </div>
-      </div>
-
-      <div className=" justify-center  w-1/4 mx-auto my-6 align-center">
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseEffectHookPage}
-        >
-          useEffect Hook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseHookPage}
-        >
-          UseHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseLayoutEffectHookPage}
-        >
-          UseLayoutEffectHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseMemoHookPage}
-        >
-          UseMemoHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleReactMemoPage}
-        >
-          ReactMemo
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseContextHookPage}
-        >
-          UseContextHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseCallbackHookPage}
-        >
-          UseCallbackHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseReferenceHookPage}
-        >
-          UseReferenceHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleUseReducerHookPage}
-        >
-          UseReducerHook
-        </button>
-
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white  rounded-md justify-center w-[500px] m-2 p-2"
-          onClick={handleReduxPage}
-        >
-          Redux
-        </button>
       </div>
     </>
   );
