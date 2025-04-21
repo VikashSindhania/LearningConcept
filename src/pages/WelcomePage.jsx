@@ -270,7 +270,7 @@ const WelcomePage = () => {
               onClick={handleHooksPage}
               className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-md"
             >
-              Hooks
+              useState Hook
             </button>
           </div>
 
